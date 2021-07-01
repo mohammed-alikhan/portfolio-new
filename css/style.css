@@ -1446,3 +1446,34 @@ portfolio popup
   text-align: right;
   padding: 0 15px;
 }
+/* contact form */
+#status-form {
+  max-width: 200px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 8px;
+  color: var(--text-black-700);
+}
+#status-form.success {
+  background-color: var(--skin-color);
+  animation: status 3s ease forwards;
+}
+#status-form.error {
+  background-color: tomato;
+  animation: status 3s ease forwards;
+}
+@keyframes status {
+  0% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  90% {
+    opacity: 1;
+    pointer-events: all;
+  }
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
