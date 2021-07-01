@@ -153,7 +153,7 @@
         <p> Experience in planning and delivering software platforms used across multiple products and organizational units. Deep expertise and hands on experience with Web Applications and programming languages such as HTML, CSS, JavaScript, JQuery and API's.
         </p>
         
-        <a href="mynewresume.pdf" class = "link-item btn-1 outer-shadow hover-in-shadow" target="_blank">Download Resume</a>
+        <a href="1mynewresume.pdf" class = "link-item btn-1 outer-shadow hover-in-shadow" target="_blank">Download Resume</a>
         <a href="#contact" class = "link-item btn-1 outer-shadow hover-in-shadow" target ="_blank">Contact Me</a>
       </div>
     </div>
@@ -994,24 +994,24 @@
 
     <div class="row">
       <div class="contact-form">
-        <form>
+        <form action = "https://formspree.io/f/xoqylnrj" method = "POST" id = "my-form">
           <div class="row">
             <div class="w-50">
 
             
             <div class="input-group outer-shadow hover-in-shadow">
-              <input type="text" placeholder = "Name" class ="input-control">
+              <input type="text" placeholder = "Name" name = "name" class ="input-control">
             </div>
             <div class="input-group outer-shadow hover-in-shadow">
-              <input type="text" placeholder = "Email" class ="input-control">
+              <input type="text" placeholder = "Email" name = "email" class ="input-control">
             </div>
             <div class="input-group outer-shadow hover-in-shadow">
-              <input type="text" placeholder = "Subject" class ="input-control">
+              <input type="text" placeholder = "Subject" name = "subject" class ="input-control">
             </div>
           </div>
           <div class="w-50">
             <div class="input-group outer-shadow hover-in-shadow">
-              <textarea class="input-control" placeholder = "Message"></textarea>
+              <textarea class="input-control" name = "message" placeholder = "Message"></textarea>
             </div>
           </div>
         </div>
@@ -1028,6 +1028,7 @@
 
       </div>
     </div>
+  <div id = "status-form"></div>
   </section>
 
   <!-- contact section end -->
@@ -1120,6 +1121,8 @@
 <script src="js/main.js"></script>
 <!-- style switcher js -->
 <script src="js/style-switcher.js"></script>
+  <!-- form -->
+<script src = "js/form.js"></script>
 </body>
 </html>
 
