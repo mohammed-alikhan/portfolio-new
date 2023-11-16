@@ -1,97 +1,100 @@
+//----------------------------- Navigation Menu --------------
 
-//----------------------------- navigation menu--------------
-
-(() =>{
-
+(() => {
    const hamburgerBtn = document.querySelector(".hamburger-btn"),
-   navMenu = document.querySelector(".nav-menu"),
-   closeNavBtn = navMenu.querySelector(".close-nav-menu");
+       navMenu = document.querySelector(".nav-menu"),
+       closeNavBtn = navMenu.querySelector(".close-nav-menu");
 
-   hamburgerBtn.addEventListener("click",showNavMenu);
-   closeNavBtn.addEventListener("click",hideNavMenu);
+   hamburgerBtn.addEventListener("click", showNavMenu);
+   closeNavBtn.addEventListener("click", hideNavMenu);
 
-   function showNavMenu(){
-      navMenu.classList.add("open");
-      bodyScrollingToggle();
+   function showNavMenu() {
+       navMenu.classList.add("open");
+       bodyScrollingToggle();
    }
-   function hideNavMenu(){
-      navMenu.classList.remove("open");
-      fadeOutEffect();
-      bodyScrollingToggle();
+
+   function hideNavMenu() {
+       navMenu.classList.remove("open");
+       fadeOutEffect();
+       bodyScrollingToggle();
    }
-   function fadeOutEffect(){
-      document.querySelector(".fade-out-effect").classList.add("active");
-      setTimeout(() =>{
-         document.querySelector(".fade-out-effect").classList.remove("active");
-      },300)
+
+   function fadeOutEffect() {
+       const fadeEffect = document.querySelector(".fade-out-effect");
+       fadeEffect.classList.add("active");
+       setTimeout(() => fadeEffect.classList.remove("active"), 300);
    }
-   // attaching an event handler to document 
-   document.addEventListener("click", (event) =>{
-      if(event.target.classList.contains('link-item')){
-         // making sure event.target.has has a value before overriding default 
-         if(event.target.hash !== ""){
-            // prevent default existing active 'section'
-            event.preventDefault();
-            const hash = event.target.hash;
-            // deactivate existing active section 
-            document.querySelector(".section.active").classList.add("hide");
-            document.querySelector(".section.active").classList.remove("active");
-            // activate new section 
-            document.querySelector(hash).classList.add("active");
-            document.querySelector(hash).classList.remove("hide");
-            // deactivate existing active navigation menu 'link-item'
-            navMenu.querySelector(".active").classList.add("outer-shadow", "hover-in-shadow");
-            navMenu.querySelector(".active").classList.remove("active","inner-shadow");
-            // if clicked 'link-item is contained withing the navigation menu'
-            if(navMenu.classList.contains("open")){
-            // activate new navigation menu 'link-item'
-            event.target.classList.add("active","inner-shadow");
-            event.target.classList.remove("outer-shadow", "hover-in-shadow");
-            // hide navigation menu 
-            hideNavMenu();
-            }else{
-               let navItems = navMenu.querySelectorAll(".link-item");
-               navItems.forEach((item) =>{
-                  if(hash === item.hash){
-                     // activating new navigation menu 'link-item'
-                     item.classList.add("active","inner-shadow");
-                     item.classList.remove("outer-shadow", "hover-in-shadow");
-                  }
-               })
+
+   document.addEventListener("click", (event) => {
+       if (event.target.classList.contains('link-item') && event.target.hash !== "") {
+           event.preventDefault();
+           const hash = event.target.hash;
+
+           document.querySelector(".section.active").classList.remove("active");
+           document.querySelector(hash).classList.add("active");
+
+           if (navMenu.querySelector(".active")) {
+               navMenu.querySelector(".active").classList.remove("active", "inner-shadow", "outer-shadow", "hover-in-shadow");
+           }
+
+           event.target.classList.add("active", "inner-shadow");
+
+           if (navMenu.classList.contains("open")) {
+               hideNavMenu();
+           } else {
                fadeOutEffect();
-            }
-            // add hash (#) to url 
-            window.location.hash = hash;
-         }
-  
-      }
-   })
+           }
 
+           window.location.hash = hash;
+       }
+   });
+
+   function updateActiveMenuItem() {
+       const sections = document.querySelectorAll(".section");
+       const navLinks = document.querySelectorAll(".nav-menu .link-item");
+
+       let index = sections.length;
+
+       while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+       navLinks.forEach((link) => {
+           link.classList.remove("active", "inner-shadow");
+       });
+
+       navLinks[index].classList.add("active", "inner-shadow");
+   }
+
+   window.addEventListener("scroll", () => {
+       updateActiveMenuItem();
+   });
 })();
 
-// -------about section tabs
+// ------- About Section Tabs --------
 (() => {
    const aboutSection = document.querySelector(".about-section"),
-   tabsContainer = document.querySelector(".about-tabs");
-   
-   tabsContainer.addEventListener("click", (event) =>{
-    //    if event.target contains 'tab-item' class and not contains active class
-       if(event.target.classList.contains("tab-item") && !event.target.classList.contains("active")){
-            const target = event.target.getAttribute("data-target");
-            // deactivate existing active 'tab-item'
-            tabsContainer.querySelector('.active').classList.remove("outer-shadow", "active");
-            //active new tab item
-            event.target.classList.add("active","outer-shadow");
-            // deactive existing active 'tab-content'
-            aboutSection.querySelector(".tab-content.active").classList.remove("active");
-            // activate new 'tab-content'
-            aboutSection.querySelector(target).classList.add("active");
-        }
-   })
+       tabsContainer = document.querySelector(".about-tabs");
 
+   tabsContainer.addEventListener("click", (event) => {
+       if (event.target.classList.contains("tab-item") && !event.target.classList.contains("active")) {
+           const target = event.target.getAttribute("data-target");
+
+           // Deactivate existing active 'tab-item'
+           tabsContainer.querySelector('.active').classList.remove("outer-shadow", "active");
+
+           // Activate new 'tab-item'
+           event.target.classList.add("active", "outer-shadow");
+
+           // Deactivate existing active 'tab-content'
+           aboutSection.querySelector(".tab-content.active").classList.remove("active");
+
+           // Activate new 'tab-content'
+           aboutSection.querySelector(target).classList.add("active");
+       }
+   });
 })();
 
-function bodyScrollingToggle(){
+// Function for toggling body scrolling
+function bodyScrollingToggle() {
    document.body.classList.toggle("hidden-scrolling");
 }
 
@@ -241,7 +244,7 @@ function bodyScrollingToggle(){
 })();
 
 
-/* ------------------------------------testimonial slider--------------------------------*/
+/* ------------------------------------testimonial slider--------------------------------
 
    (()=>{
 
@@ -288,25 +291,10 @@ function bodyScrollingToggle(){
       }
       slider();
 
-   })();
+   })(); */
 
-   // --------------------- hide all sections except active -------------------
-
-   (() =>{
-
-      const sections = document.querySelectorAll(".section");
-      sections.forEach((section) =>{
-         if(!section.classList.contains("active")){
-            section.classList.add("hide");
-         }
-      })
-
-   })(); 
-
-   window.addEventListener("load", () =>{
-      // preloader 
-      document.querySelector(".preloader").classList.add("fade-out");
-      setTimeout(() =>{
-         document.querySelector(".preloader").style.display ="none";
-      },600)
-   })
+   window.addEventListener("load", () => {
+      const preloader = document.querySelector(".preloader");
+      preloader.classList.add("fade-out");
+      setTimeout(() => preloader.style.display = "none", 600);
+  });
