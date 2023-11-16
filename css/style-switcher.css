@@ -32,11 +32,18 @@
   line-height: 40px;
 }
 .style-switcher .style-switcher-toggler {
-  top: 0;
-}
-.style-switcher .day-night {
   top: 55px;
 }
+.style-switcher .day-night {
+  top: 110px;
+}
+
+.style-switcher .hamburger-btn{
+  top: 0;
+}
+
+
+
 .style-switcher h4 {
   margin: 0 0 10px;
   color: var(--text-black-700);
