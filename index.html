@@ -1,1192 +1,340 @@
 <!DOCTYPE html>
-<html lang="zxx">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>MAK's Portfolio</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <!-- icon  -->
-  <link rel="icon" type = "image/x-icon" href="img/myimg/circle-cropped.png">
-  <!-- font awesome -->
-  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
-  <!-- main css -->
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- responsive css -->
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
-  <!-- default color skin -->
-  <link rel="stylesheet" type="text/css" href="css/skins/color-1.css" class = "alternate-style" title="color-1">
-  <link rel="stylesheet" type="text/css" href="css/skins/color-2.css" class = "alternate-style" title="color-2" disabled>
-  <link rel="stylesheet" type="text/css" href="css/skins/color-3.css" class = "alternate-style" title="color-3" disabled>
-  <link rel="stylesheet" type="text/css" href="css/skins/color-4.css" class = "alternate-style" title="color-4" disabled>
-  <link rel="stylesheet" type="text/css" href="css/skins/color-5.css" class = "alternate-style" title="color-5" disabled>
-  <!-- style css -->
-  <link rel="stylesheet" type="text/css" href="css/style-switcher.css">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohammed Ali Khan · Full Stack Engineer</title>
+  <meta name="description" content="Mohammed Ali Khan is a Chicago-based Full Stack Engineer and Scrum Master building event-driven healthcare systems and multi-agent AI with Java, Spring Boot, Python, LangGraph and Azure.">
+  <meta name="theme-color" content="#05060a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mohammed Ali Khan · Full Stack Engineer">
+  <meta property="og:description" content="Chicago-based Full Stack Engineer and Scrum Master. Event-driven microservices, multi-agent AI, and systems that don't drop the ball.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2305060a'/%3E%3Cpath d='M16 5l2.6 8.4L27 16l-8.4 2.6L16 27l-2.6-8.4L5 16l8.4-2.6z' fill='%23eaf3ff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <!-- preloader start  -->
-  <div class="preloader">
-    <div class="box">
-      <div></div><div></div><div></div>
-    </div>
-  </div>
-  <!-- preloader end -->
- 
-  <!-- header-->
+  <canvas id="sky" aria-hidden="true"></canvas>
 
-  <header class = "header">
-    <div class="container">
-      <div class = "row justify-content-between">
-        <div class="logo">
-          <a href="index.html">ma<span>k</span></a>
-        </div>
-        <div></div>
-      </div>
-    </div>
+  <header class="nav">
+    <a class="logo" href="#top" aria-label="Mohammed Ali Khan, back to top">MAK<span aria-hidden="true">✦</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+    <nav aria-label="Primary">
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="pill pill-light" href="Resume_Mohammed_Ali_Khan_Senior_Full_Stack_Engineer_2026-09.pdf" download="Mohammed-Ali-Khan-Resume.pdf">Resume <span aria-hidden="true">↓</span></a>
   </header>
 
-  <!-- header end -->
+  <main id="main">
+    <section id="top" class="hero" data-shape="galaxy" aria-labelledby="hero-name">
+      <h1 id="hero-name" class="hero-name">
+        <span class="hero-first split">Mohammed</span>
+        <span class="hero-last split">Ali Khan</span>
+      </h1>
+      <div class="hero-foot">
+        <p class="hero-role">Full Stack Engineer <span class="dot" aria-hidden="true">·</span> Scrum Master <span class="dot" aria-hidden="true">·</span> <span class="tag">Chicago-based</span></p>
+        <p class="hero-line">Event-driven healthcare systems and multi-agent AI, <em>shipped</em>.</p>
+        <div class="hero-cta">
+          <a class="pill pill-light" href="#projects">See the work</a>
+          <a class="pill" href="#contact">Get in touch</a>
+        </div>
+      </div>
+    </section>
 
-  <!-- navigation menu start -->
-
-
-  <nav class="nav-menu">
-
-    <div class="close-nav-menu outer-shadow hover-in-shadow">&times;</div>
-    <div class="nav-menu-inner">
-      <ul>
-        <li><a href="#home" class="link-item inner-shadow active">Home</a></li>
-        <li><a href="#about" class="link-item outer-shadow hover-in-shadow">About</a></li>
-        <li><a href="#portfolio" class="link-item outer-shadow hover-in-shadow">Portfolio</a></li>
-        <li><a href="#contact" class="link-item outer-shadow hover-in-shadow">Contact</a></li>
+    <section id="about" class="section" data-shape="ball" aria-labelledby="about-title">
+      <p class="eyebrow">01 <span>Origin story</span></p>
+      <h2 id="about-title" class="split">I build systems that <em>don't drop the ball.</em></h2>
+      <div class="panel prose">
+        <p>Full Stack Engineer and Scrum Master with 3+ years of experience building event-driven, cloud-native microservices for healthcare claims automation (X12 276/277, 277CA, 835) at Optum (UnitedHealth Group). I design and operate Java 21 / Spring Boot services and Python AI workflow systems on Azure, processing ~300K claims and ~180K Event Hub events daily across 10+ enterprise revenue-cycle customers, including Dignity Health.</p>
+        <p>Right now I'm building <strong>PAARC</strong>, a multi-agent AI service that automates medical insurance appeal processing end to end: LLM-based medical-record structuring, diagnosis reasoning, evidence collection, and appeal-letter drafting with LangGraph, Azure OpenAI, and Azure Document Intelligence behind FHIR R4-compliant APIs.</p>
+        <p>Proven record of cutting API latency 3x, standardizing failure recovery across services, and shipping production AI orchestration. I lead a 10-engineer Scrum team while keeping senior-level backend delivery.</p>
+      </div>
+      <ul class="stats" aria-label="Highlights">
+        <li><b>3+</b><span>years shipping</span></li>
+        <li><b>~300K</b><span>claims processed</span></li>
+        <li><b>~180K</b><span>events / day</span></li>
+        <li><b>3x</b><span>faster APIs, ~9s to &lt;3s</span></li>
+        <li><b>10</b><span>engineers led</span></li>
+        <li><b>4.0</b><span>GPA, M.S. CS</span></li>
       </ul>
-    </div>
-    <p class = "copyright-text">&copy; 2023 The Website</p>
+      <p class="offclock"><span class="mono">Off the clock</span> Soccer · Video games · Supercars · Robots · New phones &amp; laptops · Fashion · Whatever's on my FYP</p>
+    </section>
 
-  </nav>
+    <section id="experience" class="section" data-shape="car" aria-labelledby="exp-title">
+      <p class="eyebrow">02 <span>Career mode</span></p>
+      <h2 id="exp-title" class="split">Every season, <em>a faster lap.</em></h2>
 
-  <div class="fade-out-effect"></div>
-
-
-  <!-- navigation menu end -->
-
-
-  <!-- home section start -->
-
-<section class="home-section section active" id = "home">
-
-  <!-- effect wrap start -->
-
-<div class="effect-wrap">
-  <div class="effect effect-1">
-
-  </div>
-  <div class="effect effect-2">
-<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-  </div>
-  <div class="effect effect-3">
-
-  </div>
-  <div class="effect effect-4">
-
-  </div>
-  <div class="effect effect-5">
-<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
-  </div>
-</div>
-
-  <!-- effect wrap end -->
-
-<div class="container">
-  <div class="row full-screen align-items-center">
-    <div class="home-text">
-        <p>Hello 👋</p>
-        <h1>I'm</h1>
-    <h2>
-    <span class="typing-animation">Mohammed Ali Khan</span>
-  </h2>
-        <h1>Aspiring Software Developer</h1>
-      <a href="#about" class = "link-item btn-1 outer-shadow hover-in-shadow">More About Me</a>
-    </div>
-    <div class="home-img">
-      <div class="img-box inner-shadow">
-        <img src="img/myimg/profile-pic2.png" class = "outer-shadow" alt="profile-pic">
-      </div>
-    </div>
-  </div>
-</div>
-
-</section>
-
-
-
-  <!-- home section end -->
-
-  <!-- about section start -->
-
-<section class="about-section section " id = "about">
-  <div class="container">
-    <div class="row">
-      <div class="section-title">
- <h2 data-heading = "about">About Me</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="about-img">
-        <div class="img-box inner-shadow">
-          <img src="img/myimg/profile-pic1.png" alt="profile-pic" class = "outer-shadow">
-        </div>
-        <!-- social links start -->
-
-        <div class="social-links">
-          <a href="https://www.facebook.com/Tahafreestyler/" target="_blank" class ="outer-shadow hover-in-shadow" ><i class="fab fa-facebook-f"></i></a>
-          <a href="https://twitter.com/CallMe_Mohammed" class ="outer-shadow hover-in-shadow" target="_blank"><i class="fab fa-twitter"></i></a>
-          <a href="https://www.instagram.com/mohammed.alikhan_/" class ="outer-shadow hover-in-shadow" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/mohammed-alikhan/" class ="outer-shadow hover-in-shadow" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-
-        <!-- social links end -->
-      </div>
-      <div class="about-info">
-        <p><span>Hi! I’m Mohammed Ali Khan, Nice to meet you!</span>  I'm a fresh face in the world of tech, having just completed my Master's in Computer Science from Northeastern Illinois University with a perfect 4.0 GPA. My love for technology fuels my drive to innovate and strive for excellence in everything I do.</p>
-        <p>During my time at Northeastern Illinois, I challenged myself to see how far I could push my skills in software development. I got hands-on with complex data analysis, refined my web development abilities, and created user-centered solutions for my projects. Whether it was automating data processes for government research or leading projects across various departments, I embraced the power of technology to simplify and enhance our lives.</p>
-        <p>I continued learning beyond the classroom. I dove into practical experiences with Python, web development, and data visualization, applying these skills to real-world situations. For me, learning isn't just about theory; it's about making a tangible impact.</p>
-        <p>Outside the world of tech, I'm a soccer enthusiast and a gaming aficionado. These interests reflect my love for teamwork, strategic thinking, and tackling challenges head-on. They keep me agile, both mentally and physically, and ready to collaborate and achieve great things.</p>
-        <p>Now, I'm looking for my next adventure in the tech world. I'm eager to bring my academic achievements, practical experience, and quick learning ability to a forward-thinking organization. I aim to exceed expectations, always striving for thoroughness and meticulous planning in my work.</p>
-        <p>I'm excited to connect with others who share my passion for innovation. Let's see how we can work together to create something amazing!</p>
-        
-        
-        <a href="resume.pdf" class = "link-item btn-1 outer-shadow hover-in-shadow" target="_blank">Download Resume</a>
-        <a href="#contact" class = "link-item btn-1 outer-shadow hover-in-shadow" target ="_blank">Contact Me</a>
-      </div>
-    </div>
-    
-    <div class="row">
-      <!-- about tabs start -->
-
-      <div class="about-tabs">
-        <span class="tab-item outer-shadow active" data-target=".skills">skills</span>
-        <span class="tab-item" data-target=".experience">experience</span>
-        <span class="tab-item" data-target=".education">education</span>
-      </div>
-    </div>
-    <!-- about tabs end -->
-
-    <!-- skills start -->
-
-    <div class="row">
-      <div class="skills tab-content active">
-        <div class="row">
-
-       <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/python.png" alt="Python Skill">
-        </div>
-        <!-- skill item end -->
-
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/c++.png" alt="C++ Skill">
-        </div>
-        <!-- skill item end -->
-
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/java.png" alt="Java Skill">
-        </div>
-        <!-- skill item end -->
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/js.png" alt="CjavaScript Skill">
-        </div>
-        <!-- skill item end -->
-        
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/react.png" alt="React Skill">
-        </div>
-        <!-- skill item end -->
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/firebase.png" alt="Firebase Skill">
-        </div>
-        <!-- skill item end -->
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/nodejs.png" alt="NodeJS Skill">
-        </div>
-        <!-- skill item end -->
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/jquery.png" alt="JQuery Skill">
-        </div>
-        <!-- skill item end -->
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/aws.png" alt="AWS Skill">
-        </div>
-        <!-- skill item end -->
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/azure.png" alt="Azure Skill">
-        </div>
-        <!-- skill item end -->
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/bootstrap.png" alt="BootStrap Skill">
-        </div>
-        <!-- skill item end -->
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/mongodb.png" alt="MongoDB Skill">
-        </div>
-        <!-- skill item end -->
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/kubernetes.png" alt="Kubernetes Skill">
-        </div>
-        <!-- skill item end -->
-        <!-- skill item start -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/google_analytics.png" alt="Google Analytics Skill">
-        </div>
-        <!-- skill item end -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/android_studio.png" alt="Android Studio Skill">
-        </div>
-        <!-- skill item end -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/mysql.png" alt="MySQL Skill">
-        </div>
-        <!-- skill item end -->
-        <div class="skill-item" >
-          <img class = "skill-image" src="img\skills/sql.png" alt="SQL Skill">
-        </div>
-        <!-- skill item end -->
-
-        </div>
-      </div>
-    </div>
-  
-  <!-- skills end -->
-
-  <!-- experience start -->
-<div class="row">
-  <div class="experience tab-content">
-    <div class="row">
-      <div class="timeline">
-        <div class="row">
-          <!-- timeline item start -->
-          <div class="timeline-item">
-            <div class="timeline-item-inner outer-shadow">
-              <div class="icon-container">
-                <i class="fas fa-briefcase icon"></i>
-              </div>
-              <span class="company-name">Northeastern Illinois University</span>
-              <h3>Graduate Research Assistant</h3>
-              <h4>Feb 2023 - May 2024</h4>
-              <div class="details">
-                <p> ➣ Spearheaded data analysis and synthesis from 40+ universities and 1200+ healthcare facilities using Python, Qualtrics, and Excel, significantly streamlining a nursing department feasibility study. Automated survey processes required by the Illinois Board of Nursing with Qualtrics, achieving a 30% increase in data collection efficiency. Successfully led the research that resulted in the establishment of the Nursing Department at NEIU. Successfully led the research that resulted in the establishment of the Nursing Department at NEIU.</p> 
-                <p> ➣ Worked on licensing teaching candidates using TK20, producing high-quality reports that improved submission efficiency by 40% and ensured compliance with Illinois State Board of Education requirements. </p>
-                <p> ➣ Executed advanced data cleansing and organization using Python and Excel, resulting in about a 20% increase in data accuracy and a 15% boost in departmental efficiency.</p>
-                <p> ➣ Collaborated with cross-disciplinary projects, contributing to the successful completion of various initiatives within the Daniel L. Goodwin College of Education. </p>
-                <p> ➣ Utilized Drupal to make website changes and edits for the Daniel L. Goodwin College of Education, enhancing the online user experience and information accessibility.</p>
-                <p> ➣ Organized and hosted multiple events for the Daniel L. Goodwin College of Education, and designed posters, flyers, and banners using Adobe Photoshop and Canva. </p>
-                  </div>
-            </div>
+      <ol class="timeline">
+        <li class="panel job">
+          <div class="job-head">
+            <h3>Full Stack Engineer</h3>
+            <p class="job-org">Optum (UnitedHealth Group)</p>
+            <p class="job-date mono">Oct 2024 – Present</p>
           </div>
-          <!-- timeline item end -->
-
-          <!-- timeline item start -->
-          <div class="timeline-item">
-            <div class="timeline-item-inner outer-shadow">
-              <div class="icon-container">
-                <i class="fas fa-briefcase icon"></i>
-              </div>
-              <span class="company-name">Northeastern Illinois University</span>
-                  <h3>Computer Science Lab Assistant</h3>
-                  <h4>Jan 2023 - Feb 2023</h4>
-                  <div class="details">
-                  <p> ➣ Provided personalized guidance on coursework and lab projects (Java, Python, and Math), contributing to a roughly 15% increase in class average grades.</p>
-                  <p> ➣ Collaborated with academic staff to revamp lab curriculum, leading to a 25% improvement in student engagement and a 10% increase in positive course evaluations related to lab work and practical applications.</p>
-                  <p> ➣ Achieved a near-perfect 99.99% uptime for lab equipment, minimizing disruptions and fostering a seamless learning environment.</p>
-                  </div>
-            </div>
-          </div>
-          <!-- timeline item end -->
-
-          <!-- timeline item start -->
-          <div class="timeline-item">
-            <div class="timeline-item-inner outer-shadow">
-              <div class="icon-container">
-                <i class="fas fa-briefcase icon"></i>
-              </div>
-              <span class="company-name">Northeastern Illinois University</span>
-                  <h3>Library Front Desk Associate</h3>
-                  <h4>Mar 2022 - May 2022</h4>
-                  <div class="details">
-                  <p> ➣ Created a welcoming environment for students and assisted with online appointments, utilizing strong interpersonal and communication skills to enhance student satisfaction and engagement. Integrated TutorTrac software for the Learning Success Center, boosting operational efficiency by 20%.</p>
-                  <p> ➣ Ensured optimal performance and reliability of library computer systems, achieving 98% system uptime and enhancing patron access to digital resources. </p>
-                  <p> ➣ SManaged student appointments and directed them to appropriate services using TutorTrac, Google Drive, and Microsoft Office, improving operational efficiency by 20%.</p>
-                  <p> ➣ Ensuring seamless communication with Students using Email, Gmail Chat, and Email Meet.</p>
-                  </div>
-            </div>
-          </div>
-          <!-- timeline item end -->              
-
-          <!-- timeline item start -->
-          <div class="timeline-item">
-            <div class="timeline-item-inner outer-shadow">
-              <div class="icon-container">
-                <i class="fas fa-briefcase icon"></i>
-              </div>
-              <span class="company-name">Next Future IT</span>
-                    <h3>Junior Developer</h3>
-                    <h4>Oct 2020 - Oct 2021</h4>
-                    <div class="details">
-                    <p> ➣ Designed, coded, and optimized scalable web applications using HTML, CSS, JavaScript, and React.js, ensuring robust performance and responsiveness across various devices. </p><p> ➣ Collaborated with a team to timely deliver 15+ high-quality web solutions within budget, enhancing the company's reliability.</p> 
-                      <p> ➣ Leveraged Jenkins for continuous integration and testing, achieving a 25% improvement in load times and reducing bounce rates by 15%.</p>
-                      <p> ➣ Implemented fault-tolerant features to enhance system reliability and user experience.</p>
-                      <p> ➣ Developed and deployed responsive web applications with a focus on scalability and cost-efficiency, resulting in a 25% increase in user engagement and a 10% rise in conversion rates.</p>
-                      <p> ➣ Employed agile methodologies, including Scrum and Kanban, to streamline project delivery, reducing development cycles by 20% and increasing sprint velocity by 15%, enabling rapid iteration and deployment of new features.</p>
-                     </div>
-            </div>
-          </div>
-          <!-- timeline item end -->
-
-          
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  <!-- experience end -->
-
-
-<!-- education start -->
-<div class="row">
-  <div class="education tab-content">
-    <div class="row">
-      <div class="timeline">
-
-        <!-- timeline item start -->
-        <div class="timeline-item">
-          <div class="timeline-item-inner outer-shadow">
-            <div class="icon-container">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <span class="company-name">Northeastern Illinois University</span>
-            <h3>Master's degree, Computer Science</h3>
-            <h4 class="time-period">Jan 2022 - May 2024</h4>
-            <div class="details">
-              <p>Location: Chicago, Illinois</p>
-              <p>GPA: 4.0/4.0</p>
-            </div>
-          </div>
-        </div>
-        <!-- timeline item end -->
-
-        <!-- timeline item start -->
-        <div class="timeline-item">
-          <div class="timeline-item-inner outer-shadow">
-            <div class="icon-container">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <span class="company-name">Jawaharlal Nehru Technological University Hyderabad</span>
-            <h3>Bachelor's degree, Computer Science</h3>
-            <h4 class="time-period">Aug 2016 - Nov 2020</h4>
-            <div class="details">
-              <p>Location: Hyderabad, Telangana</p>
-            </div>
-          </div>
-        </div>
-        <!-- timeline item end -->
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- education end -->
-
-  </div>
-</section>
-
-  <!-- about section end -->
-
-
-  <!-- service section start 
-
-  <section class="service-section section" id = "services">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2 data-heading = "Services">What I do</h2>
-        </div>
-      </div>
-      <div class="row">
-
-        service item start  
-
-        <div class="service-item">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class = "fas fa-mobile-alt"></i>
-            </div>
-            <h3>Responsive design</h3>
-            <p>A responsive design makes your website accessible to all users, regardless of their device.</p>
-          </div>
-        </div>
-
-         service item end 
-
-         service item start   
-
-        <div class="service-item">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class = "fas fa-laptop-code"></i>
-            </div>
-            <h3>Web Design</h3>
-            <p>Clean, modern designs - optimized for performance, search engines, and converting users to customers.</p>
-          </div>
-        </div>
-
-         service item end 
-
-        service item start  
-
-        <div class="service-item">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class = "fas fa-palette"></i>
-            </div>
-            <h3>Graphic design</h3>
-            <p>Strong preference for easy-to-use, intuitive UX/UI.</p>
-          </div>
-        </div>
-
-        service item end 
-
-        service item start 
-
-        <div class="service-item">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class = "fas fa-code"></i>
-            </div>
-            <h3>Clean Code</h3>
-            <p>Fast load times and lag-free interaction, are my highest priority.</p>
-          </div>
-        </div>
-
-        service item end 
-
-        service item start 
-
-        <div class="service-item">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class = "fas fa-rocket"></i>
-            </div>
-            <h3>Dynamic</h3>
-            <p>Websites don't have to be static, I love making pages come to life.</p>
-          </div>
-        </div>
-
-         service item end 
-
-        service item start  
-        <div class="service-item">
-          <div class="service-item-inner outer-shadow">
-            <div class="icon inner-shadow">
-              <i class = "fas fa-bullhorn"></i>
-            </div>
-            <h3>Great Support</h3>
-            <p>My layouts will work on any device, big or small.</p>
-          </div>
-        </div>
-
-         service item end 
-
-      </div>
-    </div>
-  </section>
-
-   service section end -->
-
-  <!-- portfolio section start  -->
-
-  <section class="portfolio-section section" id = "portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2 data-heading="portfolio" >Latest Works</h2>
-        </div>
-      </div>
-
-      <!-- portfolio filter start  -->
-
-      <div class="row">
-        <div class="portfolio-filter">
-          <span class="filter-item outer-shadow active" data-target="all" >all</span>
-          <span class="filter-item" data-target="web-application" >web-application</span>
-          <span class="filter-item" data-target="mobile-app" >App</span>
-          <span class="filter-item" data-target="e-commerce" >e commerce</span>
-          <span class="filter-item" data-target="other" >Other</span>
-        </div>
-      </div>
-
-      <!-- portfolio filter end -->
-
-      <!-- portfolio items start  -->
-
-      <div class="row portfolio-items">
-
-
-         <!-- portfolio item start  -->
-        <div class="portfolio-item" data-category="web-application">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/portfolio/large/healthcare_assistant/healthcare_assistant-2.png" alt="portfolio" data-screenshots="img/portfolio/large/healthcare_assistant/healthcare_assistant-1.png,
-              img/portfolio/large/healthcare_assistant/healthcare_assistant-2.png,
-              img/portfolio/large/healthcare_assistant/healthcare_assistant-3.png,
-              img/portfolio/large/healthcare_assistant/healthcare_assistant-4.png,
-              img/portfolio/large/healthcare_assistant/healthcare_assistant-5.png" >
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">
-              Healthcare Assistant
-            </p>
-            <!-- portfolio item details start  -->
-            <div class="portfolio-item-details">
-              
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>This project leverages the power of AI to assist users with health, nutrition, and diet-related queries through an interactive chat interface. Designed for users seeking reliable and instant health advice, this application combines modern web technologies to deliver a seamless and secure user experience. </p>
-                </div>
-                <div class="info">
-                  <h3>Project Info</h3>
-                  <ul>
-                    <li>Date - <span>2024</span> </li>
-                    <li>Client - <span>Ali Khan</span> </li>
-                    <li>Tools - <span>React.js, Python, OpenAI's GPT-4 Turbo, JavaScript, Firebase, HTML, CSS</span> </li>
-                    <li>Web - <span><a href="https://github.com/mohammed-alikhan/HealthcareAssistant" target= "_blank">www.domain.com</a></span> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- portfolio item details end -->
-          </div>
-        </div>
-        <!-- portfolio item end -->
-
-        <!-- portfolio item start  -->
-         <div class="portfolio-item" data-category="mobile-app">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/portfolio/large/ucltracker/ucl1.png" alt="portfolio" data-screenshots="img/portfolio/large/ucltracker/ucl1.png,
-              img/portfolio/large/ucltracker/ucl2.png,
-              img/portfolio/large/ucltracker/ucl3.png,
-              img/portfolio/large/ucltracker/ucl4.png,
-              img/portfolio/large/ucltracker/ucl5.png,
-              img/portfolio/large/ucltracker/ucl6.png,
-              img/portfolio/large/ucltracker/ucl7.png,
-              img/portfolio/large/ucltracker/ucl8.png,
-              img/portfolio/large/ucltracker/ucl9.png" >
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">
-              UCLTracker2022
-            </p>
-            <!-- portfolio item details start  -->
-            <div class="portfolio-item-details">
-              
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>A Java application with the MySQL database through the Java code. JDBC (Java Database Connectivity) is one of the standard APIs for database connectivity, using it we can easily run our query, statement, and also fetch data from the database. </p>
-                </div>
-                <div class="info">
-                  <h3>Project Info</h3>
-                  <ul>
-                    <li>Date - <span>2023</span> </li>
-                    <li>Client - <span>Northeastern Illinois University</span> </li>
-                    <li>Tools - <span>Java, MySQL</span> </li>
-                    <li>Web - <span><a href="https://github.com/mohammed-alikhan/UCLTracker2022" target= "_blank">www.domain.com</a></span> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- portfolio item details end -->
-          </div>
-        </div>
-        <!-- portfolio item end -->
-        
-        <!-- portfolio item start  -->
-        <div class="portfolio-item" data-category="web-application">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/portfolio/thumb/project-1.png" alt="portfolio" data-screenshots="img/portfolio/large/project-1/1.png,
-              img/portfolio/large/project-1/2.png,
-              img/portfolio/large/project-1/3.png,
-              img/portfolio/large/project-1/4.png,
-              img/portfolio/large/project-1/5.png,
-              img/portfolio/large/project-1/6.png" >
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">
-              Personal Portfolio
-            </p>
-            <!-- portfolio item details start  -->
-            <div class="portfolio-item-details">
-              
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>A static web application which comprises three basic web development languages i.e., HTML, CSS, JavaScript. In its most basic form, it provides professional information about an individual and presents a showcase of their work. </p>
-                </div>
-                <div class="info">
-                  <h3>Project Info</h3>
-                  <ul>
-                    <li>Date - <span>2020</span> </li>
-                    <li>Client - <span>Ali Khan</span> </li>
-                    <li>Tools - <span>HTML, CSS JavaScript</span> </li>
-                    <li>Web - <span><a href="https://tender-poitras-bc15bc.netlify.app/" target= "_blank">www.domain.com</a></span> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- portfolio item details end -->
-          </div>
-        </div>
-        <!-- portfolio item end -->
-
-         <!-- portfolio item start  -->
-         <div class="portfolio-item" data-category="web-application">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/portfolio/thumb/project-2.png" alt="portfolio" data-screenshots="img/portfolio/large/project-2/1.png,
-              img/portfolio/large/project-2/2.png,
-              img/portfolio/large/project-2/3.png" >
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">
-              Forkify App
-            </p>
-            <!-- portfolio item details start  -->
-            <div class="portfolio-item-details">
-              
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>It is a recipe app where users can search for about 1 million recipes. Here the user is provided with a search functionality, a shopping cart is provided to add or delete items, and a feature of wish-list is also given where the recipes liked by users are shown. The pages are loaded dynamically using AJAX calls. The recipes are fetched through an API.</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info</h3>
-                  <ul>
-                    <li>Date - <span>2020</span> </li>
-                    <li>Client - <span>Jonas</span> </li>
-                    <li>Tools - <span>HTML, CSS, JavaScript, jQuery, AJAX</span> </li>
-                    <li>Web - <span><a href="https://github.com/mohammed-alikhan" target = "_blank">www.domain.com</a></span> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- portfolio item details end -->
-          </div>
-        </div>
-        <!-- portfolio item end -->
-
-         <!-- portfolio item start  -->
-         <div class="portfolio-item" data-category = "e-commerce">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/portfolio/thumb/project-3.png" alt="portfolio" data-screenshots="img/portfolio/large/project-3/1.png,
-              img/portfolio/large/project-3/2.png,
-              img/portfolio/large/project-3/3.png,
-              img/portfolio/large/project-3/4.png" >
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">
-              Tindog
-            </p>
-            <!-- portfolio item details start  -->
-            <div class="portfolio-item-details">
-              
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>Tindog is the new app helping dog lovers find like-minded friends for themselves and for their pooches. Dating apps have gone to the dogs. Literally. A new online service dubbed 'Tindog' is essentially Tinder for pooches.</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info</h3>
-                  <ul>
-                    <li>Date - <span>2020</span> </li>
-                    <li>Client - <span>Angela Yu</span> </li>
-                    <li>Tools - <span>HTML, CSS, JavaScript, BootStrap, jQuery</span> </li>
-                    <li>Web - <span><a href="https://github.com/mohammed-alikhan" target = "_blank">www.domain.com</a></span> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- portfolio item details end -->
-          </div>
-        </div>
-        <!-- portfolio item end -->
-
-         <!-- portfolio item start  -->
-         <div class="portfolio-item" data-category="web-application">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/portfolio/thumb/project-4.png" alt="portfolio" data-screenshots="img/portfolio/large/project-4/1.png,
-              img/portfolio/large/project-4/2.png" >
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">
-              Budgety App
-            </p>
-            <!-- portfolio item details start  -->
-            <div class="portfolio-item-details">
-              
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>Budgety is a budgeting app that allows a user to list their incomes and expenses to forecast a net budget for the current month. </p>
-                </div>
-                <div class="info">
-                  <h3>Project Info</h3>
-                  <ul>
-                    <li>Date - <span>2020</span> </li>
-                    <li>Client - <span>Jonas Schmedtmann</span> </li>
-                    <li>Tools - <span>HTML, CSS, JavaScript</span> </li>
-                    <li>Web - <span><a href="https://github.com/mohammed-alikhan/budgety">www.domain.com</a></span> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- portfolio item details end -->
-          </div>
-        </div>
-        <!-- portfolio item end -->
-
-         <!-- portfolio item start  -->
-         <div class="portfolio-item" data-category="web-application">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/portfolio/thumb/project-5.png" alt="portfolio" data-screenshots="img/portfolio/large/project-5/1.png,
-              img/portfolio/large/project-5/2.png,
-              img/portfolio/large/project-5/3.png" >
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">
-              Dice Game
-            </p>
-            <!-- portfolio item details start  -->
-            <div class="portfolio-item-details">
-              
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>A Dice Game Project that uses HTML, CSS, and JavaScript. The Dice Game is based on a two-player. Both players roll the dice and the player who gets the highest phase value will win the game. HTML code is used to design the basic structure of the project. The HTML code contains the container class that holds the player’s name and initial dice phase. Another bottom div contains the two buttons (one button for roll the dice and another button for rename the player name).</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info</h3>
-                  <ul>
-                    <li>Date - <span>2020</span> </li>
-                    <li>Client - <span>Jonas</span> </li>
-                    <li>Tools - <span>HTML, CSS, JavaScript</span> </li>
-                    <li>Web - <span><a href="https://github.com/mohammed-alikhan/Dice-Challenge">www.domain.com</a></span> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- portfolio item details end -->
-          </div>
-        </div>
-        <!-- portfolio item end -->
-
-         <!-- portfolio item start  -->
-         <div class="portfolio-item" data-category="other">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/portfolio/thumb/project-6.jpg" alt="portfolio" data-screenshots="img/portfolio/large/project-6/1.jpg,
-              img/portfolio/large/project-6/2.jpg,
-              img/portfolio/large/project-6/3.jpg,
-              img/portfolio/large/project-6/4.jpg" >
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">
-            Motion Simulating Robot Through Hand Gestures
-            </p>
-            <!-- portfolio item details start  -->
-            <div class="portfolio-item-details">
-
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>This project focuses on developing a real-time IoT-based monitoring system that allows humans to interact with robots through hand gestures, offering substantial assistance to individuals with mobility challenges. By employing advanced gesture recognition technology, the system effectively bridges the gap between the physical and digital worlds, providing an intuitive means of control that does not require manual operation. The core of the system lies in its ability to recognize gestures using an Accelerometer and Bluetooth Module, enabling users to control the robot with simple hand movements. This interaction is made possible by the integration of the NodeMCU microcontroller, which ensures accurate and real-time communication between the gestures and the robot, resulting in a responsive and user-friendly experience. To further enhance functionality, the system is equipped with an IP Camera, allowing users to monitor the robot's movements and surroundings in real-time. Additionally, the inclusion of an Ultrasonic Sensor for automatic obstacle detection significantly improves safety by preventing potential hazards during the robot's operation. The robot's mobility is supported by a DC Motor and Battery, ensuring continuous and smooth movement. Overall, this project demonstrates the potential of IoT and gesture recognition technologies in improving human-robot interaction, particularly for individuals with mobility impairments. The system offers an efficient, accessible, and user-friendly solution that enhances the quality of life for those who face challenges with traditional manual controls.</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info</h3>
-                  <ul>
-                    <li>Date - <span>2020</span> </li>
-                    <li>Client - <span>LIET</span> </li>
-                    <li>Tools - <span>NodeMCU, Accelerometer, Bluetooth Module, Ultrasonic Sensor, IP Camera, DC Motor, Battery</span> </li>
-                    <li>Play Store - <span><a href="https://github.com/mohammed-alikhan">xyz</a></span> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- portfolio item details end -->
-          </div>
-        </div>
-        <!-- portfolio item end -->
-
-         <!-- portfolio item start  -->
-         <div class="portfolio-item" data-category="mobile-app">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/portfolio/thumb/project-7.png" alt="portfolio" data-screenshots="img/portfolio/large/project-7/1.png,
-              img/portfolio/large/project-7/2.png,
-              img/portfolio/large/project-7/3.png,
-              img/portfolio/large/project-7/4.png,
-              img/portfolio/large/project-7/5.png" >
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">
-              EdHub App
-            </p>
-            <!-- portfolio item details start  -->
-            <div class="portfolio-item-details">
-
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>Developed EdHub, an Android application designed to enhance communication and collaboration between teachers and students. The app features two distinct modules—Teacher and Student—enabling users to efficiently manage their respective tasks. The Admin oversees essential functions, including authorization, authentication, permissions, history tracking, and troubleshooting. Teachers can access detailed student information, view and manage their schedules, and send or receive updates through a notification system. Students can access subject and faculty information, maintain connections with peers and faculty, and utilize notifications for clarifications, queries, and notices. The app leverages AWS Lambda for a scalable, serverless backend and AWS S3 for secure storage, ensuring a seamless and secure user experience.</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info</h3>
-                  <ul>
-                    <li>Date - <span>2019</span> </li>
-                    <li>Client - <span>LIET</span> </li>
-                    <li>Tools - <span>Java and Android</span> </li>
-                    <li>Play Store - <span><a href="https://github.com/mohammed-alikhan">xyz</a></span> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- portfolio item details end -->
-          </div>
-        </div>
-        <!-- portfolio item end -->
-        
-         <!-- portfolio item start  -->
-         <div class="portfolio-item" data-category="web-application">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/portfolio/thumb/project-9.png" alt="portfolio" data-screenshots="img/portfolio/large/project-9/1.png,
-              img/portfolio/large/project-9/2.png,
-              img/portfolio/large/project-9/3.png ">
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">
-              Job App
-            </p>
-            <!-- portfolio item details start  -->
-            <div class="portfolio-item-details">
-
-              <div class="row">
-                <div class="description">
-                  <h3>Project Brief:</h3>
-                  <p>Building a GitHub Job Web application using React hooks. Github job API is used to fetch the jobs available.</p>
-                </div>
-                <div class="info">
-                  <h3>Project Info</h3>
-                  <ul>
-                    <li>Date - <span>2019</span> </li>
-                    <li>Client - <span>Karl</span> </li>
-                    <li>Tools - <span>React.Js, JavaScript, CSS, Github API</span> </li>
-                    <li>Web - <span><a href="https://github.com/mohammed-alikhan/job-app">www.domain.com</a></span> </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <!-- portfolio item details end -->
-          </div>
-        </div>
-        <!-- portfolio item end -->
-
-         <!-- portfolio item start  -->
-         <div class="portfolio-item" data-category="photoshop">
-          <div class="portfolio-item-inner outer-shadow">
-            <div class="portfolio-item-img">
-              <img src="img/portfolio/thumb/project-8.png" alt="portfolio" data-screenshots="img/portfolio/large/project-8/1.png,
-              img/portfolio/large/project-8/2.png" >
-              <!-- view project button  -->
-              <span class="view-project">view project</span>
-            </div>
-            <p class="portfolio-item-title">
-              Coming Soon...
-            </p>
-            
-          </div>
-        </div>
-        <!-- portfolio item end -->
-      
-      </div>
-
-      <!-- portfolio items end -->
-
-    </div>
-  </section>
-
-  <!-- portfolio section end -->
-
-  <!-- testimonial section start  
-
-  <section class="testimonial-section section" id ="testimonial">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2 data-heading="testimonial">Client Speak</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="testi-box">
-          <div class="testi-slider outer-shadow">
-            <div class="testi-slider-container ">
-
-               testi item start  
-              <div class="testi-item active">
-                <i class="fas fa-quote-left left"></i>
-                <i class="fas fa-quote-right right"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nobis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad, corrupti?</p>
-                <img src="img/testimonial/1.png" alt="testimonial">
-                <span>Lance Jarvis</span>
-              </div>
-              testi item end  
-              testi item start  
-              <div class="testi-item">
-                <i class="fas fa-quote-left left"></i>
-                <i class="fas fa-quote-right right"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nobis.</p>
-                <img src="img/testimonial/1.png" alt="testimonial">
-                <span>Ericka Linda</span>
-              </div>
-               testi item end 
-               testi item start  
-              <div class="testi-item">
-                <i class="fas fa-quote-left left"></i>
-                <i class="fas fa-quote-right right"></i>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus harum cumque ea quaerat minima ducimus labore minus velit tempore commodi!</p>
-                <img src="img/testimonial/1.png" alt="testimonial">
-                <span>Hannah Schmitt</span>
-              </div>
-               testi item end 
-            </div>
-          </div>
-          <div class="testi-slider-nav">
-            <span class="prev outer-shadow hover-in-shadow"><i class="fas fa-angle-left"></i></span>
-            <span class="next outer-shadow hover-in-shadow"><i class="fas fa-angle-right"></i></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  testimonial section end -->
-
-  <!-- contact section start  -->
-
-  <section class="contact-section section " id="contact">
-    <div class="container">
-      <div class="row">
-        <div class="section-title">
-          <h2 data-heading="contact">Get In Touch</h2>
-        </div>
-      </div>
-      <div class="row">
-        
-        <!-- contact item start  -->
-
-        <div class="contact-item">
-          <div class="contact-item-inner outer-shadow">
-            <i class="fas fa-phone"></i>
-            <span>Phone</span>
-            <p>+1 (415) 915-9365</p>
-          </div>
-        </div>
-
-      <!-- contact item end -->
-        <!-- contact item start  -->
-
-        <div class="contact-item">
-          <div class="contact-item-inner outer-shadow">
-            <i class="fas fa-envelope"></i>
-            <span>Email</span>
-            <p>connectwithalikhan@gmail.com</p>
-          </div>
-        </div>
-
-      <!-- contact item end -->
-
-      <!-- contact item start  -->
-
-      <div class="contact-item">
-        <div class="contact-item-inner outer-shadow">
-          <i class="fas fa-map-marker-alt"></i>
-          <span>Location</span>
-          <p>Chicago, Illinois</p>
-        </div>
-      </div>
-      </div>
-    <!-- contact item end -->
-
-    <div class="row">
-      <div class="contact-form">
-        <form action = "https://formspree.io/f/xoqylnrj" method = "POST" id = "my-form">
-          <div class="row">
-            <div class="w-50">
-
-            
-            <div class="input-group outer-shadow hover-in-shadow">
-              <input type="text" placeholder = "Name" name = "name" class ="input-control">
-            </div>
-            <div class="input-group outer-shadow hover-in-shadow">
-              <input type="text" placeholder = "Email" name = "email" class ="input-control">
-            </div>
-            <div class="input-group outer-shadow hover-in-shadow">
-              <input type="text" placeholder = "Subject" name = "subject" class ="input-control">
-            </div>
-          </div>
-          <div class="w-50">
-            <div class="input-group outer-shadow hover-in-shadow">
-              <textarea class="input-control" name = "message" placeholder = "Message"></textarea>
-            </div>
-          </div>
-        </div>
-          <div class="row">
-            <div class="submit-btn">
-              <button type = "submit" class="btn-1 outer-shadow hover-in-shadow">
-                Send Message
-              </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-
-      </div>
-    </div>
-  <div id = "status-form"></div>
-  </section>
-
-  <!-- contact section end -->
-
-
-  <!-- portfolio popup start -->
-
-  <div class="pp portfolio-popup">
-    <div class="pp-details">
-      <div class="pp-details-inner">
-        <div class="pp-title">
-          <h2>Personal Portfolio</h2>
-          <p>Catergory - <span class="pp-project-category">web-application</span></p>
-        </div>
-        <div class="pp-project-details">
-
-          <div class="row">
-            <div class="description">
-              <h3>Project Brief:</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, molestias vero iure officia enim excepturi provident quasi magni explicabo neque sequi ducimus ullam non quia id autem laboriosam nisi quod?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa quibusdam perspiciatis nulla saepe nemo minus quia aut nesciunt sequi corrupti.</p>
-            </div>
-            <div class="info">
-              <h3>Project Info</h3>
+          <p>Build and operate the Falcon claim-status platform using Java 21 / Spring Boot 3.x microservices and Python AI services on Azure, automating healthcare claim status, denial, and appeals workflows for 10+ enterprise revenue-cycle customers including Dignity Health, Owensboro, and Northern Lights. Also building PAARC, a multi-agent AI service for automated medical insurance appeal processing.</p>
+
+          <div class="track">
+            <h4>PAARC Appeal Agents <span class="mono">Python · FastAPI · LangGraph · Azure OpenAI · active development</span></h4>
+            <ul>
+              <li>Build a multi-agent AI workflow service automating medical insurance appeal processing end to end: OCR and multi-stage LLM structuring of medical-record PDFs (Azure Document Intelligence + Azure OpenAI), diagnosis reasoning, admission-intent extraction, criterion-level clinical evidence collection, and LLM-drafted appeal letters (python-docx) exposed through HL7 FHIR R4-compliant REST APIs (Bundles carrying Task, Questionnaire, and QuestionnaireResponse resources) with Pydantic v2 contracts and MongoDB persistence.</li>
+              <li>Implemented the evidence engine as a compiled LangGraph StateGraph executing a five-node pipeline per review criterion (cache check, evidence collection, ranking, group evaluation, persistence) with per-node RetryPolicy (3 attempts, exponential backoff) and conditional cache-skip routing, making repeat invocations fully idempotent with zero LLM cost.</li>
+              <li>Engineered reliable at-least-once processing on session-enabled Azure Service Bus (one session per appeal guaranteeing ordered, single-worker delivery), extending AutoLockRenewer to a 90-minute ceiling for long-running medical-record workloads and building a dedicated DLQ reprocessor that re-enqueues failed messages with resume-mode metadata.</li>
+            </ul>
+            <details>
+              <summary>Show 5 more plays</summary>
               <ul>
-                <li>Date - <span>2020</span> </li>
-                <li>Client - <span>xyz</span> </li>
-                <li>Tools - <span>HTML, CSS JavaScript</span> </li>
-                <li>Web - <span><a href="#">www.domain.com</a></span> </li>
+                <li>Designed workflow topology as declarative, frozen-dataclass graph specifications (NodeSpec / EdgeSpec / GraphSpec) with startup contract-coverage validation that catches topology and contract drift at deploy time rather than runtime; the 7-node appeal-preprocessing graph orchestrates five protocol-based AI agents covering structuring, reasoning, intent-to-admit, evidence, and letter drafting.</li>
+                <li>Built workflow resume/skip logic that reconstructs completed activities from audit and checkpoint records on Service Bus redelivery and restores saved node state instead of re-executing, preventing expensive, non-idempotent duplicate LLM calls.</li>
+                <li>Implemented atomic audit and checkpoint persistence through a decorator-based interceptor that writes both records in a single MongoDB multi-document transaction, including a state sanitizer that converts Python runtime objects (Pydantic models, sets) into Mongo-storable primitives.</li>
+                <li>Established protocol-based agent interfaces (typing.Protocol) wired through a dependency-injection container, enabling agent implementations to be swapped (stub vs. production LLM) without modifying graph or service code and supporting clean test doubles under pytest.</li>
+                <li>Enforced environment-aware security configuration: Managed Identity required and connection strings explicitly forbidden outside local environments, with startup-time ConfigurationError on violation converting credential misconfiguration from a runtime security hole into a deploy-time failure.</li>
               </ul>
-            </div>
+            </details>
           </div>
 
-        </div>
-      </div>
-    </div>
+          <div class="track">
+            <h4>Falcon Claim-Status Platform <span class="mono">Java 21 · Spring Boot 3.x · Azure</span></h4>
+            <ul>
+              <li>Engineer 6+ event-driven microservices processing ~300K claims across REST and Azure Event Hub ingestion, sustaining ~180K events/day with blob-checkpointed, at-least-once consumers and replay-safe batch processing.</li>
+              <li>Reduced latency on timeout-prone API endpoints from ~9s to under 3s by optimizing query patterns, data access paths, and request handling.</li>
+              <li>Designed a shared Dead Letter Queue (DLQ) framework adopted by 6 services, standardizing failure capture with SHA-256 payload hashing for deduplication and asynchronous reprocessing APIs, cutting ad-hoc error-handling code by ~40% and eliminating missing-event data loss during downstream outages.</li>
+            </ul>
+            <details>
+              <summary>Show 9 more plays</summary>
+              <ul>
+                <li>Built an EDI 277CA acknowledgement pipeline that validates and enriches claim data, generates X12 files with tenant/silo-specific naming, merges processed and unprocessed claim populations behind feature flags, and uploads to Azure Blob Storage via a retry-wrapped, back-pressure-controlled thread pool.</li>
+                <li>Developed a follow-up scheduling service encoding multi-branch business rules (response-day sequencing, override dates, payer outage windows, timely-filing deadline clamping) with outbox-style publishing, idempotent batch upserts, and persisted scheduler state to prevent overlapping runs.</li>
+                <li>Implemented an 835-remittance denial workflow on Project Reactor with bounded concurrency (15 concurrent events): a 3-stage deterministic claim-matching funnel (winnowing, payment selection, multi-key DB lookup), CARC/RARC denial categorization via cached parallel API calls, and MD5 signature-based deduplication with partition-pruned PostgreSQL queries.</li>
+                <li>Delivered exactly-once-like processing on at-least-once infrastructure using PostgreSQL atomic upserts (INSERT ON CONFLICT), canonical event hashing, and transactional DB-write + event-publish boundaries; authored a conditioned JSONB batch-update path (jsonb_set + COALESCE) that prevents null-overwrite corruption of denial dispositions during republish scenarios.</li>
+                <li>Built rule-driven workflow orchestration using Drools (DRL) and Velocity templates with strategy-pattern pre-processors and retry evaluators, enabling new payer pathways (IMN, UHC/REAL, OAI) without core code rewrites.</li>
+                <li>Hardened Azure integration by wiring user-assigned managed identity, App Configuration, and Key Vault on Azure Container Apps (succeeding after prior DevOps and vendor-supported attempts failed) and implementing Azure AD token injection with connection validation and recycling for resilient Azure SQL access.</li>
+                <li>Increased platform resilience with bounded concurrency controls, a dedicated Reactor Netty connection pool for shared WebClient usage (eliminating 502/503/504 pool-exhaustion symptoms), sentinel-driven Caffeine cache refresh via App Configuration, and startup warm-up checks for Event Hub, Blob, and DB dependencies.</li>
+                <li>Delivered production observability end to end: comprehensive Splunk logging, business dashboards, OpenTelemetry/Splunk APM distributed tracing with MDC correlation IDs across reactive chains, and alerting that accelerates regression detection and triage.</li>
+                <li>Serve as Scrum Master for a 10-engineer team: run sprint planning with directors and product owners, allocate work by capacity, unblock development and testing, and review PRs, while sustaining senior-level individual backend throughput on a biweekly deploy cadence with continuous security and CVE remediation.</li>
+              </ul>
+            </details>
+          </div>
+        </li>
 
-    <div class="separator"></div>
+        <li class="panel job">
+          <div class="job-head">
+            <h3>Graduate Research Assistant</h3>
+            <p class="job-org">Northeastern Illinois University</p>
+            <p class="job-date mono">Feb 2023 – May 2024</p>
+          </div>
+          <ul>
+            <li>Led data analysis across 40+ universities and 1,200+ healthcare facilities using Python, Qualtrics, and Excel for a nursing-program feasibility study that directly supported the establishment of NEIU's Nursing Department.</li>
+            <li>Automated Illinois Board of Nursing survey workflows in Qualtrics, improving data-collection efficiency by 30%.</li>
+            <li>Produced teacher-licensure compliance reporting in TK20 aligned to Illinois State Board of Education requirements, improving submission efficiency by 40%.</li>
+            <li>Cleansed and standardized research datasets with Python and Excel, improving data accuracy by ~20%; maintained the college's Drupal website and designed event collateral in Photoshop/Canva.</li>
+          </ul>
+        </li>
 
-    <div class="pp-main">
-      <div class="pp-main-inner">
-        <div class="pp-project-details-btn outer-shadow hover-in-shadow">
-          Project Details <i class="fas fa-plus"></i>
-        </div>
-        <div class="pp-close outer-shadow hover-in-shadow">
-          &times;
-        </div>
-        <img src="img/portfolio/large/project-1/1.png" alt="img" class = "pp-img outer-shadow">
-        <div class="pp-counter">1 of 6</div>
+        <li class="panel job">
+          <div class="job-head">
+            <h3>Technical Support Roles</h3>
+            <p class="job-org">Northeastern Illinois University</p>
+            <p class="job-date mono">Jan 2023 – Feb 2023</p>
+          </div>
+          <ul>
+            <li>Tutored students in Java, Python, and mathematics coursework and maintained lab and library computer systems; integrated TutorTrac scheduling software for the Learning Success Center, improving appointment-management efficiency by ~20%.</li>
+          </ul>
+        </li>
+
+        <li class="panel job">
+          <div class="job-head">
+            <h3>Junior Developer</h3>
+            <p class="job-org">Next Future IT</p>
+            <p class="job-date mono">Oct 2020 – Oct 2021</p>
+          </div>
+          <ul>
+            <li>Built responsive, scalable web applications with HTML, CSS, JavaScript, and React.js, contributing to a 25% increase in user engagement and 10% lift in conversion rates.</li>
+            <li>Implemented Jenkins-based CI and performance optimization, improving page load times by 25% and reducing bounce rate by 15%.</li>
+            <li>Practiced Scrum/Kanban delivery, shortening development cycles by 20% and raising sprint velocity by 15%.</li>
+          </ul>
+        </li>
+
+        <li class="panel job">
+          <div class="job-head">
+            <h3>Master of Science in Computer Science</h3>
+            <p class="job-org">Northeastern Illinois University</p>
+            <p class="job-date mono">May 2024</p>
+          </div>
+          <p>GPA 4.0.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="section" data-shape="devices" aria-labelledby="proj-title">
+      <p class="eyebrow">03 <span>The lookbook</span></p>
+      <h2 id="proj-title" class="split">The collection, <em>season 2026.</em></h2>
+      <ul class="looks">
+        <li class="look">
+          <img class="look-shot" src="img/projects/backpocket.jpg" alt="Backpocket web app showing the All saves view with a link box, search, and saved links" width="1280" height="800" loading="lazy" decoding="async">
+          <p class="look-no mono">Look 01 · Personal · Live</p>
+          <h3>Backpocket</h3>
+          <p class="look-hook">The graveyard of saved reels, finally sorted.</p>
+          <p>An offline-first PWA that catches reels, shorts and links from the Android share sheet, an iPhone Shortcut, or a bookmarklet. It strips tracking params to catch duplicates and syncs across devices. With optional Gemini AI it files each save on its own (only when it's ≥ 0.8 confident), searches by meaning with pgvector, and turns a folder into a step-by-step plan.</p>
+          <p class="look-metric">No account needed <span>·</span> AI rate limits as Postgres token buckets <span>·</span> deploy fails if a key leaks into the bundle</p>
+          <p class="chips mono">TypeScript · Vite · IndexedDB · Service Worker · Supabase · pgvector · Deno Edge Functions · Gemini · Vitest</p>
+          <p class="look-links">
+            <a class="look-link" href="https://mohammeddev07.github.io/Backpocket/" target="_blank" rel="noopener">Live demo <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a>
+            <a class="look-link" href="https://github.com/mohammeddev07/Backpocket" target="_blank" rel="noopener">Repo <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a>
+          </p>
+        </li>
+        <li class="look">
+          <img class="look-shot" src="img/projects/pennywise.jpg" alt="PennyWise mobile app on two phones: home balance with weekly spending chart, and Insights with spending by month" width="1280" height="800" loading="lazy" decoding="async">
+          <p class="look-no mono">Look 02 · Personal · Full stack</p>
+          <h3>PennyWise</h3>
+          <p class="look-hook">“Groceries over $50 last month” is a valid filter now.</p>
+          <p>A cash-management app where you type a question in plain English and Gemini turns it into a structured filter you can review and apply. Behind it is a Java 21 / Spring Boot API with multiple books, category budgets, .xlsx import and export, idempotency keys, and token-bucket rate limiting. The Expo app ships fixes over the air and tells you plainly when the free-tier server is waking up.</p>
+          <p class="look-metric">11 Flyway migrations <span>·</span> Testcontainers-tested <span>·</span> OTA updates via EAS</p>
+          <p class="chips mono">Java 21 · Spring Boot 3.5 · Spring Security · PostgreSQL · Flyway · Docker · Expo · React Native · TypeScript · Zustand · TanStack Query · Gemini</p>
+          <p class="look-links">
+            <a class="look-link" href="https://github.com/mohammeddev07/pennywise" target="_blank" rel="noopener">API repo <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a>
+            <a class="look-link" href="https://github.com/mohammeddev07/pennywise-mobile" target="_blank" rel="noopener">Mobile repo <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a>
+          </p>
+        </li>
+        <li class="look">
+          <p class="look-no mono">Look 03 · Optum · Work</p>
+          <h3>PAARC Appeal Agents</h3>
+          <p class="look-hook">Five AI agents, one appeal letter.</p>
+          <p>Multi-agent AI that automates medical insurance appeals: OCR, record structuring, diagnosis reasoning, evidence collection, and appeal-letter drafting behind FHIR R4 APIs.</p>
+          <p class="look-metric">5 agents <span>·</span> 7-node graph <span>·</span> $0 LLM cost on repeat runs</p>
+          <p class="chips mono">Python · FastAPI · LangGraph · Azure OpenAI · MongoDB</p>
+        </li>
+        <li class="look">
+          <img class="look-shot" src="img/projects/know-his-names.jpg" alt="Know His Names home screen with a Begin with 3 Names card and a progress mosaic of 99 stars" width="1280" height="800" loading="lazy" decoding="async">
+          <p class="look-no mono">Look 04 · Personal · In scholar review</p>
+          <h3>Know His Names</h3>
+          <p class="look-hook">Spaced repetition, pointed at the 99 Names.</p>
+          <p>A local-first PWA for learning the 99 Names of Allah with active recall and FSRS scheduling. There's no account and no server database, it works offline, and your progress fills a mosaic of 99 eight-pointed stars. The content is schema-checked with Zod, so a bad entry fails the build.</p>
+          <p class="look-metric">FSRS scheduling <span>·</span> works offline <span>·</span> no accounts, no tracking</p>
+          <p class="chips mono">Next.js 16 · React 19 · TypeScript · Tailwind CSS 4 · ts-fsrs · Zod · IndexedDB · Vitest · Playwright</p>
+          <p class="look-links">
+            <a class="look-link" href="https://github.com/mohammeddev07/know-his-names" target="_blank" rel="noopener">Repo <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a>
+          </p>
+        </li>
+      </ul>
+
+      <ul class="looks looks-compact">
+        <li class="look">
+          <p class="look-no mono">Look 05 · Optum · Work</p>
+          <h3>Falcon Claim-Status Platform</h3>
+          <p class="look-hook">~180K events a day, none dropped.</p>
+          <p>Event-driven microservices automating claim status, denial, and appeals workflows, with a shared DLQ framework and replay-safe processing.</p>
+          <p class="chips mono">Java 21 · Spring Boot 3 · Event Hubs · PostgreSQL · Reactor</p>
+        </li>
+        <li class="look">
+          <img class="look-shot" src="img/projects/healthcare-assistant.jpg" alt="Healthcare Assistant chat answering questions about omega-3 and a diet for high cholesterol" width="1280" height="800" loading="lazy" decoding="async">
+          <p class="look-no mono">Look 06 · Personal</p>
+          <h3>Healthcare Assistant</h3>
+          <p class="look-hook">GPT-4 Turbo, kept to nutrition only.</p>
+          <p>A React chat app with real-time Firestore chat rooms and Firebase sign-in. A Flask backend verifies Firebase ID tokens and prompts GPT-4 Turbo to answer only nutrition and diet questions, in 50 words.</p>
+          <p class="chips mono">React · Flask · OpenAI API · Firebase Auth · Firestore</p>
+          <a class="look-link" href="https://github.com/mohammed-alikhan/HealthcareAssistant" target="_blank" rel="noopener">Repo <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a>
+        </li>
+        <li class="look">
+          <img class="look-shot" src="img/projects/ucl-tracker.jpg" alt="UCL Tracker desktop app with eight query buttons and a table of player names" width="1280" height="800" loading="lazy" decoding="async">
+          <p class="look-no mono">Look 07 · Academic</p>
+          <h3>UCL Tracker 2022</h3>
+          <p class="look-hook">The 2021–22 Champions League, one click per question.</p>
+          <p>A Java Swing desktop app that loads season data from Excel into MySQL with Apache POI, then answers eight questions, from top scorers and win percentages to Player of the Tournament.</p>
+          <p class="chips mono">Java · Swing · JDBC · MySQL · Apache POI</p>
+          <a class="look-link" href="https://github.com/mohammed-alikhan/UCLTracker2022" target="_blank" rel="noopener">Repo <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a>
+        </li>
+        <li class="look">
+          <p class="look-no mono">Look 08 · Academic</p>
+          <h3>Student E-Bridge</h3>
+          <p class="look-hook">Office hours, as an Android app.</p>
+          <p>An Android app with student, faculty and admin roles. Students post questions, faculty answer them, and admins register users and subjects. Records live in Amazon SimpleDB and files in S3.</p>
+          <p class="chips mono">Java · Android SDK · AWS SimpleDB · Amazon S3</p>
+          <a class="look-link" href="https://github.com/mohammed-alikhan/Android-Based-Student-E-Bridge-using-AWS" target="_blank" rel="noopener">Repo <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section" data-shape="robot" aria-labelledby="skills-title">
+      <p class="eyebrow">04 <span>Loadout</span></p>
+      <h2 id="skills-title" class="split">Fully <em>equipped.</em></h2>
+      <div class="search">
+        <label for="skill-q" class="mono">Search the loadout</label>
+        <input id="skill-q" type="search" placeholder="try “langgraph”, “fhir”, “reactor”…" autocomplete="off" spellcheck="false">
+        <p id="skill-count" class="mono" aria-live="polite"></p>
       </div>
-      <div class="pp-loader">
-        <div></div>
+      <div class="loadout">
+        <div class="panel kit"><h3>AI &amp; Workflow Orchestration</h3><ul><li>LangGraph (StateGraph, RetryPolicy, subgraphs)</li><li>LangChain</li><li>Multi-Agent Systems</li><li>Azure OpenAI / OpenAI SDK</li><li>Azure Document Intelligence (OCR)</li><li>Agentic Workflows</li><li>Durable State Machines</li><li>Checkpoint/Resume Orchestration</li><li>LLM Document Pipelines</li><li>Arize OTEL / OpenInference</li></ul></div>
+        <div class="panel kit"><h3>Backend &amp; Frameworks</h3><ul><li>Spring Boot 3.x</li><li>Spring Data JPA</li><li>Hibernate</li><li>Spring WebFlux</li><li>Project Reactor</li><li>Spring Security (JWT, OAuth2)</li><li>Spring Retry</li><li>Spring Cache (Caffeine)</li><li>FastAPI</li><li>Flask</li><li>Uvicorn / Gunicorn</li><li>Node.js</li><li>Pydantic v2</li><li>Drools</li><li>Apache Velocity</li></ul></div>
+        <div class="panel kit"><h3>Languages</h3><ul><li>Java 21</li><li>Python</li><li>SQL</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li><li>C++</li><li>C#</li></ul></div>
+        <div class="panel kit"><h3>Cloud (Azure-primary)</h3><ul><li>Azure Event Hubs</li><li>Azure Service Bus (sessions, DLQ)</li><li>Azure Blob Storage</li><li>Azure Container Apps</li><li>Azure App Service</li><li>Azure App Configuration</li><li>Azure Key Vault</li><li>Azure Managed Identity</li><li>AWS (EC2, S3, Lambda)</li><li>Docker</li><li>Kubernetes</li></ul></div>
+        <div class="panel kit"><h3>Data &amp; Databases</h3><ul><li>PostgreSQL (JSONB, partitioning, batch JDBC)</li><li>MongoDB / Azure Cosmos DB</li><li>Multi-document transactions</li><li>Aggregation pipelines</li><li>SQL Server / Azure SQL</li><li>H2</li><li>Liquibase</li><li>Flyway</li></ul></div>
+        <div class="panel kit"><h3>APIs &amp; Integration</h3><ul><li>REST</li><li>GraphQL (Spring GraphQL)</li><li>OpenAPI / Swagger</li><li>Webhooks</li><li>X12 EDI (276/277, 277CA, 835, 837)</li><li>HL7 FHIR R4</li><li>Event-Driven Architecture</li><li>Dead-Letter Queues</li></ul></div>
+        <div class="panel kit"><h3>Frontend &amp; Mobile</h3><ul><li>React</li><li>React Native (Expo)</li><li>Tailwind CSS</li><li>Bootstrap</li><li>jQuery</li><li>Thymeleaf</li></ul></div>
+        <div class="panel kit"><h3>DevOps &amp; Observability</h3><ul><li>GitHub Actions</li><li>SonarQube</li><li>JaCoCo</li><li>Pytest</li><li>Splunk (dashboards, alerts, APM)</li><li>OpenTelemetry</li><li>Logback / Logstash</li><li>Git</li><li>Postman</li><li>Insomnia</li><li>Docker Desktop</li><li>Podman</li></ul></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section" data-shape="controller" aria-labelledby="contact-title">
+      <p class="eyebrow">05 <span>Press start</span></p>
+      <h2 id="contact-title" class="split">Player 2, <em>ready?</em></h2>
+      <p class="lede">Open to conversations about backend, platform, and applied-AI roles. The fastest way to reach me is email.</p>
+
+      <div class="contact-links">
+        <div class="email-row">
+          <a class="big-link" href="mailto:mohammed.dev07@gmail.com">mohammed.dev07@gmail.com</a>
+          <button type="button" class="pill" id="copy-email" data-email="mohammed.dev07@gmail.com">Copy</button>
+        </div>
+        <ul class="socials">
+          <li><a class="pill" href="https://www.linkedin.com/in/mohammed-alikhan/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a></li>
+          <li><a class="pill" href="https://github.com/mohammed-alikhan" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span><span class="sr-only"> (opens in new tab)</span></a></li>
+          <li><a class="pill" href="Resume_Mohammed_Ali_Khan_Senior_Full_Stack_Engineer_2026-09.pdf" download="Mohammed-Ali-Khan-Resume.pdf">Resume (PDF) <span aria-hidden="true">↓</span></a></li>
+        </ul>
       </div>
 
-      <!-- pp navigation -->
-      <div class="pp-prev"><i class="fas fa-play"></i></div>
-      <div class="pp-next"><i class="fas fa-play"></i></div>
-      <!-- pp navigation close  -->
-    </div>
+      <form class="panel form" id="contact-form" action="https://formspree.io/f/xoqylnrj" method="POST">
+        <div class="field">
+          <label for="f-name">Name</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="f-email">Email</label>
+          <input id="f-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field field-wide">
+          <label for="f-msg">Message</label>
+          <textarea id="f-msg" name="message" rows="4" required></textarea>
+        </div>
+        <input type="text" name="_gotcha" class="sr-only" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="pill pill-light">Send message</button>
+        <p id="form-status" class="mono" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Mohammed Ali Khan · Chicago-based</p>
+    <p class="mono">Hand-built: HTML, CSS, one canvas. <span class="hint">psst ↑↑↓↓←→←→BA</span></p>
+  </footer>
+
+  <div class="hud" aria-hidden="true">
+    <span class="mono">XP</span>
+    <span class="xp"><i></i></span>
+    <span class="mono" id="xp-text">0/6</span>
   </div>
+  <button type="button" class="replay" id="replay" aria-label="Scatter the stars">↻</button>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
 
-  <!-- portfolio popup end -->
-
-  <!-- style switcher start - for demo purposes only -->
-
-  <div class="style-switcher outer-shadow">
-    <div class="hamburger-btn s-icon outer-shadow hover-in-shadow">
-      <span></span>
-    </div>
-    <div class="style-switcher-toggler s-icon outer-shadow hover-in-shadow">
-      <i class="fas fa-cog fa-spin"></i>
-    </div>
-    <div class="day-night s-icon outer-shadow hover-in-shadow">
-      <i class="fas "></i>
-    </div>
-
-    <h4>Theme Colors</h4>
-    <div class="colors">
-      <span class="color-1" onclick = "setActiveStyle('color-1')"></span>
-      <span class="color-2" onclick = "setActiveStyle('color-2')"></span>
-      <span class="color-3" onclick = "setActiveStyle('color-3')"></span>
-      <span class="color-4" onclick = "setActiveStyle('color-4')"></span>
-      <span class="color-5" onclick = "setActiveStyle('color-5')"></span>
-
-    </div>
-  </div>
-
-  <!-- style swithcer end -->
-
- 
-  
-
-<!-- main js -->
-<script src="js/main.js"></script>
-<!-- style switcher js -->
-<script src="js/style-switcher.js"></script>
-  <!-- form -->
-<script src = "js/form.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
